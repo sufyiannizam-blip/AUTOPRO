@@ -1,0 +1,76 @@
+.car-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 20px;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(15, 23, 42);
+  flex-wrap: wrap;
+}
+
+.car-card {
+  flex: 1;
+  min-width: 300px;
+}
+
+.car-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.car-img img {
+  width: 100%;
+  height: auto;
+}
+
+.car-group {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card span {
+  font-size: 20px;   /* icon size small */
+  color: red;
+}
+
+.car-hading h1 {
+  font-family: poppins;
+  color: antiquewhite;
+}
+
+.car-hading h3 {
+  color: red;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .car-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .car-group {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .car-hading h1 {
+    font-size: 24px;
+  }
+
+  .card span {
+    font-size: 18px;
+  }
+}
