@@ -6,17 +6,19 @@ import Hero from './component/hero/Hero'
 import './App.css'
 import Card from './component/card/Card'
 import Car from './component/car section/Car'
-
+import HowItWorks from './component/main-title/HowItWorks'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return ( 
     <>    
+    
       <Navbar />
       <Hero />
       <Card />
       <Car />
+      <HowItWorks />
     </>
   )
 }

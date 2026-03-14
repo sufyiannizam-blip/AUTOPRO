@@ -1,0 +1,84 @@
+.how-it-works-section {
+  background-color: rgb(15,23,42); /* Dark Navy Background */
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif; /* Heading style match karne ke liye */
+}
+
+.main-title {
+  font-size: 40px;
+  margin-bottom: 80px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Red Horizontal Line in background */
+.line-divider {
+  position: absolute;
+  top: 35px; /* Icon ke center mein lane ke liye */
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2; /* Line ke upar icons ko lane ke liye */
+}
+
+.step-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #ff2d37; /* Exactly red color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(255, 45, 55, 0.4);
+}
+
+.step-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.step-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #a0a8b5; /* Slightly grey text */
+  max-width: 160px;
+  line-height: 1.4;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .steps-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .line-divider {
+    display: none;
+  }
+}
