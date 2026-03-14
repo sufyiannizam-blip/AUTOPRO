@@ -74,11 +74,24 @@
 
 /* Mobile responsive layout */
 @media (max-width: 768px) {
-  .steps-row {
+  /* .steps-row {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
-  }
+  } */
+   .steps-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   }
   .line-divider {
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column; */
+
     display: none;
   }
 }

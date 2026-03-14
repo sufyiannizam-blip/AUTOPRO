@@ -7,7 +7,10 @@ import './App.css'
 import Card from './component/card/Card'
 import Car from './component/car section/Car'
 import HowItWorks from './component/main-title/HowItWorks'
-
+import Pricing from './component/Pricings/Pricing'
+import ClientSay from './component/Client-Say/ClientSay'
+import Booking from './component/booking/Booking'
+import Footer from './component/footer/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +22,10 @@ function App() {
       <Card />
       <Car />
       <HowItWorks />
+      <Pricing />
+      <ClientSay />
+      <Booking />
+      <Footer />
     </>
   )
 }

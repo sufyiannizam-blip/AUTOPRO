@@ -1,0 +1,140 @@
+.Service-Packages-group {
+  background-color: rgb(15, 23, 42);
+  width: 100%;
+  padding: 10px;
+}
+.Packages {
+  text-align: center;
+  h2 {
+    font-family: poppin;
+    font-size: 40px;
+    color: aliceblue;
+  }
+  span {
+    color: #ff2d37;
+  }
+}
+.pricing-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 25px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.price-card {
+  background-color: #1a2333;
+  border: 1px solid #2d3748;
+  border-radius: 15px;
+  padding: 40px 30px;
+  color: white;
+  width: 320px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+/* Popular Card Style */
+.price-card.popular {
+  border: 2px solid #ff2d37;
+  transform: scale(1.05); /* Thoda bada dikhane ke liye */
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff2d37;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.plan-name {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+
+.price-tag {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+.dollar {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.amount {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.per {
+  color: #8892b0;
+  margin-left: 5px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.features li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon.red {
+  color: #ff2d37;
+  margin-right: 10px;
+}
+.disabled {
+  color: #4b5563;
+  text-decoration: line-through;
+}
+
+/* Buttons */
+.outline-btn {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #ff2d37;
+  color: #ff2d37;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filled-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff2d37;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Mobile View */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+  .price-card.popular {
+    transform: scale(1);
+  }
+}

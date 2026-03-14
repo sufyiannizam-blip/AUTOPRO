@@ -1,0 +1,55 @@
+.Client-Say {
+    background-color: rgb(15,23,42);
+    width: 100%;
+    padding: 30px;
+}
+.Say-hading {
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    font-family: poppin;
+    font-size: 23px;
+}
+.Say-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    gap: 20px;
+}
+.Say-card {
+    
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgb(30,41,59);
+    color: aliceblue;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    gap: 10px;
+}
+.profile h5{
+    color: rgb(153,149,135);
+}
+span {
+    color: brown;
+}
+@media (max-width: 768px) {
+
+    .Say-group{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .Say-card{
+        width: 100%;
+    }
+
+}

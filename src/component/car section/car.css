@@ -14,13 +14,15 @@
   min-width: 300px;
 }
 
-.car-img {
+.car-img  img{
   flex: 1;
+  border-radius: 20px;
+  width: 90%;
   min-width: 300px;
 }
 
 .car-img img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
